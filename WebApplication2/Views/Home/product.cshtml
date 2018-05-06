@@ -1,0 +1,208 @@
+﻿@{
+    ViewData["Title"] = "商品详细信息";
+}
+
+
+<div class="container">
+
+
+    <div class="content inside-page product-details">
+        <div class="breadcrumb"><a asp-area="" asp-controller="Home" asp-action="index">首页</a> / <a href="#">Collections </a> / White v-neck shirt for men</div>
+
+        <div class="row">
+            <div class="col-sm-9">
+                <div class="row">
+                    <div class="col-sm-5">
+                        <!-- product carousel -->
+                        <div id="ProductCarousel" class="carousel slide" data-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="item active"><img src="~/images/1.jpg" class="img-responsive" alt="product"></div>
+                                <div class="item"><img src="~/images/7.jpg" class="img-responsive" alt="product"></div>
+                                <div class="item"><img src="~/images/2.jpg" class="img-responsive" alt="product"></div>
+                            </div>
+                            <!-- Controls -->
+                            <a class="left carousel-control" href="#ProductCarousel" role="button" data-slide="prev"><i class="fa fa-angle-left"></i></a>
+                            <a class="right carousel-control" href="#ProductCarousel" role="button" data-slide="next"><i class="fa fa-angle-right"></i></a>
+                        </div>
+                        <!-- product carousel -->
+                    </div>
+
+                    <!-- product information -->
+                    <div class="col-sm-7 information">
+                        <h1>White v-neck shirt for men</h1>
+                        <div class="price"><span>$121.22</span> <b>$110.00</b></div>
+                        <div class="clearfix spacer">
+                            <div class="pull-left"><input class="form-control quantity" placeholder="Quantity" type="number"></div>
+                            <div class="pull-right"><a asp-area="" asp-controller="Home" asp-action="checkout" class="btn btn-primary"><i class="fa fa-shopping-cart"></i> Add to Cart</a></div>
+                        </div>
+
+                        <div class="description-tabs">
+                            <!-- Nav tabs -->
+                            <ul class="nav nav-tabs" role="tablist">
+                                <li class="active"><a href="#description" role="tab" data-toggle="tab">描述</a></li>
+                                <li><a href="#review" role="tab" data-toggle="tab">评论(2)</a></li>
+                            </ul>
+
+                            <!-- Tab panes -->
+                            <div class="tab-content">
+                                <div class="tab-pane active" id="description">
+                                    1、采用防水、透气OSY-TEX面料；
+                                    2、脚边采用大自然的植物深浅色印花设计，与DX1135#为情侣款特别推出；
+                                    3、胸袋镭射无缝胶条设计，增加防水性能；
+                                    4、袖肘位采用立体裁剪，增加活动空间、穿着更舒适；
+                                    5、连帽设计，可自由拆卸，外套内置防风裙；
+                                    6、内胆是高品质复合保暖面料，可独立外穿。
+                                </div>
+                                <div class="tab-pane" id="review">
+
+                                    <div class="reviews">
+                                        <h5>辛***马（匿名）：</h5>
+                                        <p>
+                                            短袖很好，我身高185 体重150斤穿XL的正好，至于很多人说的掉色问题，拜托，那只是第一次洗掉的浮色，我洗第二遍的时候基本不掉色的
+                                        </p>
+                                    </div>
+
+                                    <div class="reviews">
+                                        <h5>2***生（匿名）：</h5>
+                                        <p>物流很快，用的顺风，衣服也挺好，本人身高180体重72买的L号很合身！ </p>
+                                    </div>
+
+                                    <textarea class="form-control" rows="3">评论</textarea>
+                                    <a href="#" class="btn btn-primary">提交评论</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- product information -->
+                </div>
+            </div>
+
+
+            <!-- Interested product -->
+            <div class="col-sm-3 interest-product hidden-xs">
+                <h3>You might also be interested</h3>
+                <!-- product -->
+                <div class="product">
+                    <div class="row">
+                        <div class="col-sm-4"><a asp-area="" asp-controller="Home" asp-action="product"><img src="~/images/2.jpg" class="img-responsive"></a></div>
+                        <div class="col-sm-8">
+                            <div class="title-price">
+                                <h4><a asp-area="" asp-controller="Home" asp-action="product">Warm Cloths</a></h4><span>$ 200</span>
+                            </div>
+
+                            <a asp-area="" asp-controller="Home" asp-action="checkout" class="btn btn-default"><i class="fa fa-shopping-cart"></i> Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- product -->
+                <!-- product -->
+                <div class="product">
+                    <div class="row">
+                        <div class="col-sm-4"><a asp-area="" asp-controller="Home" asp-action="product"><img src="~/images/6.jpg" class="img-responsive"></a></div>
+                        <div class="col-sm-8">
+                            <div class="title-price">
+                                <h4><a asp-area="" asp-controller="Home" asp-action="product">Warm Cloths</a></h4><span>$ 200</span>
+                            </div>
+
+                            <a asp-area="" asp-controller="Home" asp-action="checkout" class="btn btn-default"><i class="fa fa-shopping-cart"></i> Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- product -->
+                <!-- product -->
+                <div class="product">
+                    <div class="row">
+                        <div class="col-sm-4"><a asp-area="" asp-controller="Home" asp-action="product"><img src="~/images/1.jpg" class="img-responsive"></a></div>
+                        <div class="col-sm-8">
+                            <div class="title-price">
+                                <h4><a asp-area="" asp-controller="Home" asp-action="product">Warm Cloths</a></h4><span>$ 200</span>
+                            </div>
+
+                            <a asp-area="" asp-controller="Home" asp-action="checkout" class="btn btn-default"><i class="fa fa-shopping-cart"></i> Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- product -->
+
+            </div>
+            <!-- Interested product -->
+
+
+        </div>
+
+
+        <!-- RELATED PRODUCTS -->
+        <div class="related-products">
+            <h3>Related Products</h3>
+            <div class="row">
+                <div class="col-sm-2 col-xs-6">
+                    <div class="product">
+                        <a href="product.html"><img src="~/images/6.jpg" class="img-responsive"></a>
+                        <div class="row title-price">
+                            <div class="col-md-7"><h5><a href="product.html">Warm Cloths</a></h5></div>
+                            <div class="col-md-5"><span>$ 200</span></div>
+                        </div>
+                        <a href="product.html" class="btn btn-default"><i class="fa fa-shopping-cart"></i> Add to Cart</a>
+                    </div>
+                </div>
+                <div class="col-sm-2 col-xs-6">
+                    <div class="product">
+                        <a href="product.html"><img src="~/images/5.jpg" class="img-responsive"></a>
+                        <div class="row title-price">
+                            <div class="col-md-7"><h5><a href="product.html">Warm Cloths</a></h5></div>
+                            <div class="col-md-5"><span>$ 200</span></div>
+                        </div>
+                        <a href="product.html" class="btn btn-default"><i class="fa fa-shopping-cart"></i> Add to Cart</a>
+                    </div>
+                </div>
+                <div class="col-sm-2 col-xs-6">
+                    <div class="product">
+                        <a href="product.html"><img src="~/images/4.jpg" class="img-responsive"></a>
+                        <div class="row title-price">
+                            <div class="col-md-7"><h5><a href="product.html">Warm Cloths</a></h5></div>
+                            <div class="col-md-5"><span>$ 200</span></div>
+                        </div>
+                        <a href="product.html" class="btn btn-default"><i class="fa fa-shopping-cart"></i> Add to Cart</a>
+                    </div>
+                </div>
+                <div class="col-sm-2 col-xs-6">
+                    <div class="product">
+                        <a href="product.html"><img src="~/images/3.jpg" class="img-responsive"></a>
+                        <div class="row title-price">
+                            <div class="col-md-7"><h5><a href="product.html">Warm Cloths</a></h5></div>
+                            <div class="col-md-5"><span>$ 200</span></div>
+                        </div>
+                        <a href="product.html" class="btn btn-default"><i class="fa fa-shopping-cart"></i> Add to Cart</a>
+                    </div>
+                </div>
+                <div class="col-sm-2 col-xs-6">
+                    <div class="product">
+                        <a href="product.html"><img src="~/images/2.jpg" class="img-responsive"></a>
+                        <div class="row title-price">
+                            <div class="col-md-7"><h5><a href="product.html">Warm Cloths</a></h5></div>
+                            <div class="col-md-5"><span>$ 200</span></div>
+                        </div>
+                        <a href="product.html" class="btn btn-default"><i class="fa fa-shopping-cart"></i> Add to Cart</a>
+                    </div>
+                </div>
+                <div class="col-sm-2 col-xs-6">
+                    <div class="product">
+                        <a href="product.html"><img src="~/images/1.jpg" class="img-responsive"></a>
+                        <div class="row title-price">
+                            <div class="col-md-7"><h5><a href="product.html">Warm Cloths</a></h5></div>
+                            <div class="col-md-5"><span>$ 200</span></div>
+                        </div>
+                        <a href="product.html" class="btn btn-default"><i class="fa fa-shopping-cart"></i> Add to Cart</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!-- latest products -->
+
+
+
+
+    </div>
+
+</div>
